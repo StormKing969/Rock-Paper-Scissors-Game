@@ -23,12 +23,100 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background: radial-gradient(circle at 50% 25%, rgba(31, 55, 86, 1) 35%, rgba(20, 21, 57, 1) 100%);
-    width: 100%;
+    min-width: 365px;
     height: auto;
 }
 
 .container {
-    
+    width: 100%;
+    height: 100vh;
+    padding: 10%;
+}
+
+.score_section {
+    border: 5px solid var(--Header-Outline);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.score_section img {
+    width: auto;
+    height: 100px;
+}
+
+.score_board {
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 10px;
+    height: 100px;
+    padding: 10px 25px;
+    float: right;
+}
+
+.container .score_section .score_board p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--Dark-Text);
+}
+
+.current_score {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Dark-Text);
+    font-size: 48px;
+}
+
+.game {
+    margin: 80px 0;
+    position: relative;
+}
+
+.game .pentagon {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+}
+
+.game .img_circle {
+    background-color: #FFF;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.game .scissors {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 40%;
+    border: 5px solid yellow;
+}
+
+.game .paper {
+    position: absolute;
+    z-index: 11;
+    border: 5px solid yellow;
+}
+
+.game .rock {
+    position: absolute;
+    z-index: 11;
+    border: 5px solid yellow;
+}
+
+.game .lizard {
+    position: absolute;
+    z-index: 11;
+    border: 5px solid yellow;
+}
+
+.game .spock {
+    position: absolute;
+    z-index: 11;
+    border: 5px solid yellow;
 }
 
 /* ===== Footer ===== */
